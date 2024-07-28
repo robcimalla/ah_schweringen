@@ -29,7 +29,7 @@ export const links = [
 	{ name: "Startseite", hash: "#startseite" },
 	{ name: "Übersicht", hash: "#uebersicht" },
 	{ name: "Gästezimmer", hash: "#zimmer" },
-	{ name: "Kontakt", hash: "#kontakt" },
+	{ name: "Anfrage", hash: "#anfrage" },
 	{ name: "Anfahrt", hash: "#anfahrt" },
 ] as const;
 

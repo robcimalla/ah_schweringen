@@ -10,6 +10,7 @@ import Austattung from "./components/austattung";
 import RestRooms from "./components/rest-rooms";
 import { outdoor, restRooms } from "@/lib/data";
 import Outdoor from "./components/outdoor";
+import Contact from "./components/contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
 				<Austattung />
 				<RestRooms restRooms={restRooms} />
 				<Outdoor outdoorImages={outdoor} />
+				<Contact />
 				{children}
 			</body>
 		</html>

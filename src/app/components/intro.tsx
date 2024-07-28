@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,7 +8,7 @@ import React from "react";
 export default function Intro() {
 	return (
 		<section className="relative w-full h-screen overflow-hidden">
-			<div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 px-48 text-left">
+			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 px-48 text-left">
 				<h1 className="text-white sm:text-4xl font-bold drop-shadow-lg leading-relaxed sm:leading-loose">
 					Gemütliche Gästezimmer in Schweringen <br /> - Ideal für Urlaub oder Geschäftsreisen
 				</h1>
@@ -17,7 +20,7 @@ export default function Intro() {
 						Gästezimmer ansehen
 					</Link>
 				</div>
-			</div>
+			</motion.div>
 			<Image layout="fill" objectFit="cover" quality={100} className="z-[-1]" alt="house" src="/house2.jpeg" />
 		</section>
 	);
