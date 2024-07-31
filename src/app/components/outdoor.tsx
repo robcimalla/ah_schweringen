@@ -8,7 +8,7 @@ type OutdoorWithImages = Room & { images: { src: string }[] };
 export default function Outdoor({ outdoorImages }: { outdoorImages: OutdoorWithImages[] }) {
 	const allImages = outdoorImages.flatMap((image) => image.images);
 	return (
-		<section className="flex flex-col w-[48rem] mx-auto mt-20">
+		<section className="flex flex-col mx-auto mt-20">
 			<SectionHeading>Mein Außenbereich</SectionHeading>
 			<p className="text-1xl leading-loose mb-8"></p>
 			<MultiImageSlider images={allImages} />

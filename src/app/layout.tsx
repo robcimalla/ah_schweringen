@@ -11,11 +11,13 @@ import RestRooms from "./components/rest-rooms";
 import { outdoor, restRooms } from "@/lib/data";
 import Outdoor from "./components/outdoor";
 import Contact from "./components/contact";
+import { Toaster } from "react-hot-toast";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Andrea Hellmann | Vermietung in Schwertingen",
+	title: "Andrea Hellmann | Vermietung in Schweringen",
 	description: "Vermietung von Appartments in Schweringen",
 };
 
@@ -26,16 +28,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html className="!scroll-smooth" lang="en">
-			<body className={`${inter.className} bg-gray-50 text-gray-950 relative`}>
-				<Header />
-				<Intro />
-				<Overview />
-				<Rooms />
-				<Austattung />
-				<RestRooms restRooms={restRooms} />
-				<Outdoor outdoorImages={outdoor} />
-				<Contact />
+			<body className={`${inter.className} bg-gray-50 text-gray-950 relative `}>
 				{children}
+				<Toaster position="top-right" />
+				<Footer />
 			</body>
 		</html>
 	);
