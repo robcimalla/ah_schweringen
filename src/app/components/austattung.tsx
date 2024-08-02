@@ -21,7 +21,7 @@ export default function Austattung() {
 	};
 
 	return (
-		<section className="flex flex-col mt-20 mx-auto">
+		<section className="flex flex-col mt-20 mx-auto max-w-[50rem] px-2">
 			<SectionHeading>Ausstattung</SectionHeading>
 			<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 				{austattung.map((item, index) => (

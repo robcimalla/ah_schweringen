@@ -2,15 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "keen-slider/keen-slider.min.css";
-import Header from "./components/header";
-import Intro from "./components/intro";
-import Overview from "./components/overview";
-import Rooms from "./components/rooms";
-import Austattung from "./components/austattung";
-import RestRooms from "./components/rest-rooms";
-import { outdoor, restRooms } from "@/lib/data";
-import Outdoor from "./components/outdoor";
-import Contact from "./components/contact";
+import "swiper/css";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/footer";
 

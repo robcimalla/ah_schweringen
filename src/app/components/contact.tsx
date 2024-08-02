@@ -23,7 +23,7 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<section className="mt-20 text-center sm:mt-28 w-[min(100%,48rem)] mx-auto">
+		<section className="mt-20 text-center sm:mt-28 w-[min(100%,48rem)] mx-auto px-2 max-w-[50rem]">
 			<SectionHeading>Anfrage</SectionHeading>
 			<p className="">Bei Fragen, schreibt mir gerne direkt an </p>
 			<a className="underline" href="mailto:andrea.hellmann@gmail.com">

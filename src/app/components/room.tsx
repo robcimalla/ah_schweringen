@@ -18,9 +18,10 @@ export default function Room({ description, tags, images, type, price }: RoomPro
 	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
 	return (
-		<motion.div className="flex flex-col w-full max-w-full px-2 py-4 mb-8 rounded-lg overflow-hidden" ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }}>
+		<motion.div className="flex flex-col py-4 mb-8 rounded-lg overflow-hidden" ref={ref} style={{ scale: scaleProgress, opacity: opacityProgress }}>
 			<h3 className="text-xl font-semibold mb-4">{type}</h3>
 			<div className="flex flex-col mt-4 mb-4">
+				<ImageSlider images={images} />
 				<p className="leading-relaxed mb-2">{description}</p>
 				<ul className="flex flex-wrap gap-2">
 					{tags.map((tag, index) => (
@@ -29,7 +30,7 @@ export default function Room({ description, tags, images, type, price }: RoomPro
 						</li>
 					))}
 				</ul>
-				<p className="text-center bg-slate-50 font-semibold w-auto shadow-lg border py-1 px-2 text-sm rounded-full mt-2">{price} €</p>
+				<p className="text-center bg-slate-50 font-semibold shadow-lg w-16 border p-1 text-sm rounded-full mt-2">{price} €</p>
 			</div>
 		</motion.div>
 	);
