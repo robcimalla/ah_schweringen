@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Intro() {
 	return (
-		<section id="intro" className="relative w-full h-screen overflow-hidden px-2">
+		<section id="intro" className="relative w-full h-screen overflow-hidden">
 			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 px-4 sm:px-8 lg:px-16 text-center">
 				<h1 className="text-white text-3xl sm:text-4xl font-bold drop-shadow-lg leading-tight sm:leading-relaxed px-2 sm:px-4">
 					Gemütliche Gästezimmer in Schweringen <br /> - Ideal für Urlaub oder Geschäftsreisen

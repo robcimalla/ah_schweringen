@@ -23,7 +23,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 		<div className="max-w-4xl mx-auto">
 			<div className="relative">
 				<div className="overflow-hidden">
-					<div className="flex" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
+					<div className="flex transition-transform duration-500" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
 						{images.map((image, index) => (
 							<img key={index} src={image.src} className="flex-shrink-0 w-full rounded-xl" alt={`Slide ${index}`} />
 						))}
