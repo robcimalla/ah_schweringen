@@ -8,6 +8,7 @@ import RestRooms from "./components/rest-rooms";
 import { outdoor, restRooms } from "@/lib/data";
 import Outdoor from "./components/outdoor";
 import Contact from "./components/contact";
+import Anfahrt from "./components/anfahrt";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 			<RestRooms restRooms={restRooms} />
 			<Outdoor outdoorImages={outdoor} />
 			<Contact />
+			<Anfahrt />
 		</main>
 	);
 }

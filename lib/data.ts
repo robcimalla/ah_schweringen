@@ -27,8 +27,8 @@ export interface Room {
 
 export const links = [
 	{ name: "Startseite", hash: "#startseite" },
-	{ name: "Übersicht", hash: "#uebersicht" },
 	{ name: "Gästezimmer", hash: "#zimmer" },
+	{ name: "Ausstattung", hash: "#ausstattung" },
 	{ name: "Anfrage", hash: "#anfrage" },
 	{ name: "Anfahrt", hash: "#anfahrt" },
 ] as const;
@@ -85,7 +85,7 @@ export const restRooms: Room[] = [
 		type: "Badezimmer",
 		description: "Ausgestattet mit einem komfortablen Doppelbett. Ab 50,-€ pro Nacht bei Belegung mit zwei Personen, ab 30,-€ bei Einzelbelegung.",
 		tags: ["Dusche", "Fön", "Handtücher"],
-		images: [bz1, bz2, bz3],
+		images: [bz1, bz2],
 	},
 	{
 		type: "Kochbereich",

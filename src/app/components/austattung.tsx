@@ -4,6 +4,7 @@ import { austattung } from "@/lib/data";
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import useSectionInView from "@/lib/hooks";
 
 export default function Austattung() {
 	const fadeInAnimationVariants = {
@@ -20,8 +21,10 @@ export default function Austattung() {
 		}),
 	};
 
+	const { ref } = useSectionInView("Ausstattung");
+
 	return (
-		<section className="flex flex-col mt-20 mx-auto max-w-[50rem] px-2">
+		<section ref={ref} id="ausstattung" className="flex flex-col mt-20 mx-auto max-w-[50rem] px-2">
 			<SectionHeading>Ausstattung</SectionHeading>
 			<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 				{austattung.map((item, index) => (

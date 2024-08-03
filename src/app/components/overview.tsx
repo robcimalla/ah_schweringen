@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeading from "./section-heading";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Overview() {
 	return (

@@ -16,7 +16,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 	};
 
 	const prevImage = () => {
-		setCurrenIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex - 1));
+		setCurrenIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
 	};
 
 	return (
