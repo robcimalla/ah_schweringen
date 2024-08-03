@@ -3,8 +3,10 @@
 import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import useSectionInView from "@/lib/hooks";
-import LeafletMap from "./maps";
 import { IoIosArrowDown, IoIosArrowDropdown, IoIosArrowUp } from "react-icons/io";
+import dynamic from "next/dynamic";
+
+const LeafletMap = dynamic(() => import("./maps"), { ssr: false });
 
 export default function Anfahrt() {
 	const { ref } = useSectionInView("Anfahrt");

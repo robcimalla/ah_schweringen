@@ -26,7 +26,6 @@ export const sendEmail = async (formData: FormData) => {
 			reply_to: email as string,
 			react: React.createElement(ContactFormEmail, { message: message as string, email: email as string, fromDate: formattedFromDate as string, toDate: formattedToDate as string }),
 		});
-		console.log(data);
 	} catch (error: unknown) {
 		return { error: getErrorMessage(error) };
 	}
