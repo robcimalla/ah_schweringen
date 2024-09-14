@@ -6,6 +6,7 @@ import "swiper/css";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/footer";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
 					<Toaster position="top-right" />
 					<Footer />
 				</ActiveSectionContextProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
